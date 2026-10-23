@@ -63,7 +63,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 </div>
 
                 <div className="space-y-3">
-                  <span className="text-xs font-semibold text-[#c61d23] uppercase tracking-wide">
+                  <span className="text-xs font-semibold text-[#e69222] uppercase tracking-wide">
                     {product.categoryLabel}
                   </span>
                   <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -123,7 +123,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-gray-700">
                 {product.applications.map((app) => (
                   <li key={app} className="flex items-center gap-2">
-                    <span className="text-[#c61d23]">✔</span>
+                    <span className="text-[#e69222]">✔</span>
                     <span>{app}</span>
                   </li>
                 ))}

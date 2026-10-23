@@ -31,7 +31,7 @@ export function ProductCatalog() {
 
             {/* Başlık Alanı (Aynı ekran görüntüsündeki gibi sade alt bar) */}
             <div className="bg-[#fcfcfc] border-t border-gray-100 py-3.5 px-3 text-center">
-              <h2 className="text-[15px] font-bold text-gray-900 group-hover:text-[#c61d23] transition-colors">
+              <h2 className="text-[15px] font-bold text-gray-900 group-hover:text-[#e69222] transition-colors">
                 {locale === "en" ? product.titleEn : product.title}
               </h2>
             </div>

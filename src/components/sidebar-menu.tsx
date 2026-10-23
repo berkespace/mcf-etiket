@@ -24,8 +24,8 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
     <aside className="space-y-6">
       {/* 1. MENÜ KUTUSU (Screenshot Exact Match) */}
       <div className="border border-gray-200 bg-white">
-        {/* Kırmızı Başlık Barı */}
-        <div className="flex items-center gap-2 bg-[#c61d23] px-4 py-3 text-white">
+        {/* Amber Başlık Barı (Logo Color) */}
+        <div className="flex items-center gap-2 bg-gradient-to-r from-[#e69222] to-[#cf7e17] px-4 py-3 text-white shadow-sm">
           <span className="text-sm">🗂</span>
           <span className="text-sm font-bold tracking-wide uppercase">{t("sidebarMenuTitle")}</span>
         </div>
@@ -34,8 +34,8 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
         <nav className="divide-y divide-gray-100 text-[14px] text-gray-700">
           <Link
             href="/kurumsal"
-            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#c61d23] transition-colors ${
-              active === "hakkimizda" ? "font-bold text-[#c61d23] bg-gray-50/80" : ""
+            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#e69222] transition-colors ${
+              active === "hakkimizda" ? "font-bold text-[#e69222] bg-[#fef7ed]/70" : ""
             }`}
           >
             <span className="text-gray-400">👤</span>
@@ -47,10 +47,10 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
               <Link
                 href="/urunler"
                 className={`flex-1 flex items-center gap-2.5 px-4 py-3 transition-colors ${
-                  active === "urunler" ? "font-bold text-[#c61d23]" : "hover:text-[#c61d23]"
+                  active === "urunler" ? "font-bold text-[#e69222]" : "hover:text-[#e69222]"
                 }`}
               >
-                <span className={active === "urunler" ? "text-[#c61d23]" : "text-gray-400"}>📦</span>
+                <span className={active === "urunler" ? "text-[#e69222]" : "text-gray-400"}>📦</span>
                 <span>{t("sidebarProducts")}</span>
               </Link>
               <button
@@ -69,7 +69,7 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
                   <Link
                     key={p.slug}
                     href={`/urunler/${p.slug}`}
-                    className="block py-1 text-gray-600 hover:text-[#c61d23] transition-colors"
+                    className="block py-1 text-gray-600 hover:text-[#e69222] transition-colors"
                   >
                     {locale === "en" ? p.titleEn : p.title}
                   </Link>
@@ -83,10 +83,10 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
               <Link
                 href="/teknik-destek"
                 className={`flex-1 flex items-center gap-2.5 px-4 py-3 transition-colors ${
-                  active === "teknik-destek" ? "font-bold text-[#c61d23]" : "hover:text-[#c61d23]"
+                  active === "teknik-destek" ? "font-bold text-[#e69222]" : "hover:text-[#e69222]"
                 }`}
               >
-                <span className={active === "teknik-destek" ? "text-[#c61d23]" : "text-gray-400"}>🎧</span>
+                <span className={active === "teknik-destek" ? "text-[#e69222]" : "text-gray-400"}>🎧</span>
                 <span>{t("sidebarSupport")}</span>
               </Link>
               <button
@@ -103,19 +103,19 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
               <div className="border-t border-gray-100 bg-gray-50/70 px-4 py-2 space-y-1.5 text-[13px]">
                 <Link
                   href="/teknik-destek#termal-kafa"
-                  className="block py-1 text-gray-600 hover:text-[#c61d23] transition-colors"
+                  className="block py-1 text-gray-600 hover:text-[#e69222] transition-colors"
                 >
                   {locale === "en" ? "Printhead Maintenance" : "Termal Kafa Bakımı"}
                 </Link>
                 <Link
                   href="/teknik-destek#kuka-capi"
-                  className="block py-1 text-gray-600 hover:text-[#c61d23] transition-colors"
+                  className="block py-1 text-gray-600 hover:text-[#e69222] transition-colors"
                 >
                   {locale === "en" ? "Core Sizes (40mm / 76mm)" : "Kuka Çapı (40mm / 76mm)"}
                 </Link>
                 <Link
                   href="/teknik-destek#ribon-secimi"
-                  className="block py-1 text-gray-600 hover:text-[#c61d23] transition-colors"
+                  className="block py-1 text-gray-600 hover:text-[#e69222] transition-colors"
                 >
                   {locale === "en" ? "Ribbon Compatibility" : "Ribon ve Etiket Uyumu"}
                 </Link>
@@ -125,8 +125,8 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
 
           <Link
             href="/blog"
-            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#c61d23] transition-colors ${
-              active === "blog" ? "font-bold text-[#c61d23] bg-gray-50/80" : ""
+            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#e69222] transition-colors ${
+              active === "blog" ? "font-bold text-[#e69222] bg-[#fef7ed]/70" : ""
             }`}
           >
             <span className="text-gray-400">✍️</span>
@@ -135,8 +135,8 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
 
           <Link
             href="/iletisim"
-            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#c61d23] transition-colors ${
-              active === "iletisim" ? "font-bold text-[#c61d23] bg-gray-50/80" : ""
+            className={`flex items-center gap-2.5 px-4 py-3 hover:bg-gray-50 hover:text-[#e69222] transition-colors ${
+              active === "iletisim" ? "font-bold text-[#e69222] bg-[#fef7ed]/70" : ""
             }`}
           >
             <span className="text-gray-400">✉️</span>
@@ -166,7 +166,7 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
 
       {/* 3. DİREKT İLETİŞİM & SİPARİŞ HATTI */}
       <div className="border border-gray-200 bg-white p-4">
-        <span className="text-[11px] font-bold uppercase tracking-wider text-[#c61d23]">
+        <span className="text-[11px] font-bold uppercase tracking-wider text-[#e69222]">
           {locale === "en" ? "Direct Contact & Orders" : "Direkt İletişim & Sipariş"}
         </span>
         <h4 className="mt-1 text-sm font-bold text-gray-900">{site.contactPerson}</h4>

@@ -23,7 +23,7 @@ export default function IletisimPage() {
             {/* İletişim Bilgileri Kartı */}
             <div className="border border-gray-200 bg-white p-6 sm:p-8">
               <div className="border-b border-gray-200 pb-4">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#c61d23]">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#e69222]">
                   Resmi Firma Bilgileri
                 </span>
                 <h1 className="mt-1 text-xl sm:text-2xl font-bold text-gray-900">
@@ -36,7 +36,7 @@ export default function IletisimPage() {
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#e69222]">
                     İletişim & Yetkili
                   </h3>
                   <p className="mt-1 text-base font-bold text-gray-900">
@@ -46,11 +46,11 @@ export default function IletisimPage() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#e69222]">
                     Telefon & WhatsApp Hattı
                   </h3>
                   <p className="mt-1">
-                    <a href={`tel:${site.phoneRaw}`} className="text-base font-bold text-gray-900 hover:text-[#c61d23]">
+                    <a href={`tel:${site.phoneRaw}`} className="text-base font-bold text-gray-900 hover:text-[#e69222]">
                       {site.phone}
                     </a>
                   </p>
@@ -58,7 +58,7 @@ export default function IletisimPage() {
                 </div>
 
                 <div className="sm:col-span-2 border-t border-gray-100 pt-4">
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#e69222]">
                     Fabrika & Genel Merkez Adresi
                   </h3>
                   <p className="mt-1 text-sm font-medium text-gray-900 leading-relaxed">
@@ -67,7 +67,7 @@ export default function IletisimPage() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#e69222]">
                     Çalışma Saatleri
                   </h3>
                   <p className="mt-1 text-gray-700 leading-relaxed">
@@ -76,11 +76,11 @@ export default function IletisimPage() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#e69222]">
                     Kurumsal E-Posta
                   </h3>
                   <p className="mt-1">
-                    <a href={`mailto:${site.email}`} className="font-semibold text-gray-900 hover:text-[#c61d23]">
+                    <a href={`mailto:${site.email}`} className="font-semibold text-gray-900 hover:text-[#e69222]">
                       {site.email}
                     </a>
                   </p>

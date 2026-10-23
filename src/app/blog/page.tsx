@@ -67,11 +67,11 @@ export default function BlogPage() {
                   className="border border-gray-200 bg-white p-6 hover:border-gray-300 transition-colors"
                 >
                   <div className="flex items-center gap-3 text-xs text-gray-400">
-                    <span className="font-semibold text-[#c61d23]">{art.category}</span>
+                    <span className="font-semibold text-[#e69222]">{art.category}</span>
                     <span>•</span>
                     <span>{art.date}</span>
                   </div>
-                  <h3 className="mt-2 text-base sm:text-lg font-bold text-gray-900 hover:text-[#c61d23] transition-colors">
+                  <h3 className="mt-2 text-base sm:text-lg font-bold text-gray-900 hover:text-[#e69222] transition-colors">
                     {art.title}
                   </h3>
                   <p className="mt-2 text-sm text-gray-600 leading-relaxed">
@@ -87,7 +87,7 @@ export default function BlogPage() {
               </p>
               <Link
                 href="/iletisim"
-                className="mt-3 inline-block bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors"
+                className="mt-3 inline-block bg-[#e69222] hover:bg-[#cf7e17] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors shadow-sm"
               >
                 Bizimle İletişime Geçin
               </Link>

@@ -22,9 +22,9 @@ export function Header() {
           <div className="flex items-center gap-6">
             <a
               href={`tel:${site.phoneRaw}`}
-              className="inline-flex items-center gap-1.5 text-gray-700 hover:text-[#c61d23] transition-colors"
+              className="inline-flex items-center gap-1.5 text-gray-700 hover:text-[#e69222] transition-colors"
             >
-              <svg className="h-3.5 w-3.5 text-[#c61d23]" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-3.5 w-3.5 text-[#e69222]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z" />
               </svg>
               <span>{t("contactPerson")}: {t("phone")}</span>
@@ -32,9 +32,9 @@ export function Header() {
 
             <a
               href={`mailto:${site.email}`}
-              className="hidden sm:inline-flex items-center gap-1.5 text-gray-700 hover:text-[#c61d23] transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 text-gray-700 hover:text-[#e69222] transition-colors"
             >
-              <svg className="h-3.5 w-3.5 text-[#c61d23]" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="h-3.5 w-3.5 text-[#e69222]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>
               <span>{t("email")}</span>
@@ -92,11 +92,11 @@ export function Header() {
 
           {/* Orta: Masaüstü Navigasyon */}
           <nav className="hidden lg:flex items-center gap-7 text-[15px] font-medium text-gray-700">
-            <Link href="/" className="hover:text-[#c61d23] transition-colors">
+            <Link href="/" className="hover:text-[#e69222] transition-colors">
               {t("navHome")}
             </Link>
 
-            <Link href="/kurumsal" className="hover:text-[#c61d23] transition-colors">
+            <Link href="/kurumsal" className="hover:text-[#e69222] transition-colors">
               {t("navAbout")}
             </Link>
 
@@ -107,7 +107,7 @@ export function Header() {
             >
               <Link
                 href="/urunler"
-                className="flex items-center gap-1 hover:text-[#c61d23] transition-colors"
+                className="flex items-center gap-1 hover:text-[#e69222] transition-colors"
               >
                 <span>{t("navProducts")}</span>
                 <span className="text-xs text-gray-400">⌵</span>
@@ -118,7 +118,7 @@ export function Header() {
                     <Link
                       key={p.slug}
                       href={`/urunler/${p.slug}`}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#c61d23]"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#e69222]"
                     >
                       {locale === "en" && p.titleEn ? p.titleEn : p.title}
                     </Link>
@@ -126,7 +126,7 @@ export function Header() {
                   <div className="border-t border-gray-100 mt-1 pt-1">
                     <Link
                       href="/urunler"
-                      className="block px-4 py-1.5 text-xs font-semibold text-[#c61d23] hover:underline"
+                      className="block px-4 py-1.5 text-xs font-semibold text-[#e69222] hover:underline"
                     >
                       {t("seeAllProducts")}
                     </Link>
@@ -135,11 +135,11 @@ export function Header() {
               )}
             </div>
 
-            <Link href="/teknik-destek" className="hover:text-[#c61d23] transition-colors">
+            <Link href="/teknik-destek" className="hover:text-[#e69222] transition-colors">
               {t("navSupport")}
             </Link>
 
-            <Link href="/blog" className="hover:text-[#c61d23] transition-colors">
+            <Link href="/blog" className="hover:text-[#e69222] transition-colors">
               {t("navBlog")}
             </Link>
           </nav>
@@ -148,7 +148,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/iletisim"
-              className="inline-flex items-center justify-center rounded-md bg-[#c61d23] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#b0141a]"
+              className="inline-flex items-center justify-center rounded-md bg-[#e69222] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#cf7e17] shadow-sm"
             >
               {t("navContact")}
             </Link>
@@ -182,25 +182,25 @@ export function Header() {
         {mobileOpen && (
           <div className="border-t border-gray-200 bg-white px-4 py-4 lg:hidden">
             <div className="flex flex-col space-y-3 text-sm font-medium text-gray-700">
-              <Link href="/" onClick={() => setMobileOpen(false)} className="hover:text-[#c61d23]">
+              <Link href="/" onClick={() => setMobileOpen(false)} className="hover:text-[#e69222]">
                 {t("navHome")}
               </Link>
-              <Link href="/kurumsal" onClick={() => setMobileOpen(false)} className="hover:text-[#c61d23]">
+              <Link href="/kurumsal" onClick={() => setMobileOpen(false)} className="hover:text-[#e69222]">
                 {t("navAbout")}
               </Link>
-              <Link href="/urunler" onClick={() => setMobileOpen(false)} className="hover:text-[#c61d23]">
+              <Link href="/urunler" onClick={() => setMobileOpen(false)} className="hover:text-[#e69222]">
                 {t("navProducts")}
               </Link>
-              <Link href="/teknik-destek" onClick={() => setMobileOpen(false)} className="hover:text-[#c61d23]">
+              <Link href="/teknik-destek" onClick={() => setMobileOpen(false)} className="hover:text-[#e69222]">
                 {t("navSupport")}
               </Link>
-              <Link href="/blog" onClick={() => setMobileOpen(false)} className="hover:text-[#c61d23]">
+              <Link href="/blog" onClick={() => setMobileOpen(false)} className="hover:text-[#e69222]">
                 {t("navBlog")}
               </Link>
               <Link
                 href="/iletisim"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 inline-flex items-center justify-center rounded-md bg-[#c61d23] py-2 text-white font-semibold"
+                className="mt-2 inline-flex items-center justify-center rounded-md bg-[#e69222] py-2 text-white font-semibold shadow-sm"
               >
                 {t("navContact")}
               </Link>

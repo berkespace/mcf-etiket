@@ -96,7 +96,7 @@ export default function KurumsalPage() {
               <div className="mt-6 pt-4 border-t border-gray-100 flex justify-end">
                 <Link
                   href="/iletisim"
-                  className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors"
+                  className="bg-[#e69222] hover:bg-[#cf7e17] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors shadow-sm"
                 >
                   İletişime Geçin
                 </Link>

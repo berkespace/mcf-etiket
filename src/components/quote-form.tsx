@@ -83,7 +83,7 @@ export function QuoteForm() {
           <select
             id="product-select"
             required
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           >
             {options.map((opt) => (
               <option key={opt} value={opt}>
@@ -100,7 +100,7 @@ export function QuoteForm() {
           <input
             type="text"
             placeholder={t("dimensionPlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           />
         </div>
 
@@ -111,7 +111,7 @@ export function QuoteForm() {
           <input
             type="text"
             placeholder={t("qtyPlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           />
         </div>
 
@@ -123,7 +123,7 @@ export function QuoteForm() {
             type="text"
             required
             placeholder={t("namePlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           />
         </div>
 
@@ -135,7 +135,7 @@ export function QuoteForm() {
             type="tel"
             required
             placeholder={t("phonePlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           />
         </div>
 
@@ -146,7 +146,7 @@ export function QuoteForm() {
           <input
             type="email"
             placeholder={t("emailPlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23]"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222]"
           />
         </div>
 
@@ -157,7 +157,7 @@ export function QuoteForm() {
           <textarea
             rows={3}
             placeholder={t("notesPlaceholder")}
-            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#c61d23] resize-none"
+            className="w-full border border-gray-300 p-2 text-sm text-gray-800 outline-none focus:border-[#e69222] resize-none"
           />
         </div>
       </div>
@@ -165,13 +165,13 @@ export function QuoteForm() {
       <div className="mt-5 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-xs text-gray-500">
           Hızlı sipariş & bilgi:{" "}
-          <a href={`tel:${site.phoneRaw}`} className="font-bold text-gray-900 hover:text-[#c61d23]">
+          <a href={`tel:${site.phoneRaw}`} className="font-bold text-gray-900 hover:text-[#e69222]">
             {site.contactPerson} ({site.phone})
           </a>
         </p>
         <button
           type="submit"
-          className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors cursor-pointer w-full sm:w-auto text-center"
+          className="bg-[#e69222] hover:bg-[#cf7e17] text-white text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors cursor-pointer w-full sm:w-auto text-center shadow-sm"
         >
           {t("submitQuoteBtn")}
         </button>

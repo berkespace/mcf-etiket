@@ -136,7 +136,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
                 <div className="flex-1">
-                  <span className="font-semibold text-sm text-gray-900 hover:text-[#c61d23]">
+                  <span className="font-semibold text-sm text-gray-900 hover:text-[#e69222]">
                     {locale === "en" ? item.titleEn : item.title}
                   </span>
                   <span className="ml-2 text-xs text-gray-400">

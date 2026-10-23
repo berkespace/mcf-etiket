@@ -4,14 +4,19 @@
   --ink: #1f2937;
   --muted: #4b5563;
   --line: #e5e7eb;
-  --brand-red: #c61d23;
-  --brand-red-hover: #b0141a;
+  --brand-primary: #e69222;
+  --brand-primary-hover: #cf7e17;
+  --brand-primary-dark: #b86e10;
+  --brand-primary-light: #fef7ed;
+  --brand-red: #e69222;
+  --brand-red-hover: #cf7e17;
 }
 
 @theme inline {
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-brand-primary: var(--brand-primary);
   --color-brand-red: var(--brand-red);
   --font-sans: var(--font-inter);
 }

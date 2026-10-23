@@ -18,11 +18,12 @@ export const metadata: Metadata = {
   description: "KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. - Baskılı ve baskısız rulo etiketlerde hassas üretim. Kepez / Antalya.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.svg?v=3", type: "image/svg+xml" },
+      { url: "/icon.png?v=3", type: "image/png" },
+      { url: "/favicon.ico?v=3" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico?v=3",
+    apple: "/apple-icon.png?v=3",
   },
 };
 
