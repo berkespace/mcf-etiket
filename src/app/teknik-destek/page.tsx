@@ -122,9 +122,9 @@ export default function TeknikDestekPage() {
                 </a>
                 <Link
                   href="/iletisim"
-                  className="bg-[#c61d23] text-white text-xs font-semibold px-4 py-2 rounded-sm"
+                  className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-4 py-2 rounded-sm transition-colors"
                 >
-                  Teklif İste
+                  İletişime Geç
                 </Link>
               </div>
             </div>

@@ -77,9 +77,17 @@ export function Header() {
       {/* 2. ANA BAŞLIK / MENÜ ÇUBUĞU */}
       <header className="border-b border-gray-200 bg-white">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          {/* Sol: Logo */}
-          <div className="flex items-center">
+          {/* Sol: Logo & Firma Ünvanı */}
+          <div className="flex items-center gap-3">
             <Logo className="h-11 w-auto" />
+            <div className="hidden sm:block border-l border-gray-200 pl-3">
+              <span className="block text-[11px] font-bold text-gray-800 leading-tight">
+                {site.companyTitle}
+              </span>
+              <span className="block text-[10px] text-gray-500 leading-tight">
+                Etiket & Ambalaj Çözümleri • {site.city}
+              </span>
+            </div>
           </div>
 
           {/* Orta: Masaüstü Navigasyon */}

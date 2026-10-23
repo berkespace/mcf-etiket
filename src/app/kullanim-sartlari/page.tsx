@@ -10,8 +10,8 @@ export default function TermsPage() {
       <h1 className="font-serif text-3xl text-neutral-900">Kullanım Şartları</h1>
       <p className="mt-6 text-[15px] leading-7 text-muted">
         Bu sitedeki ürün görselleri ve teknik açıklamalar bilgilendirme amaçlıdır.
-        Kesin ölçü, malzeme ve teslim süresi teklif onayıyla belirlenir. Site içeriği
-        MCF Etiket&apos;e aittir; izinsiz kopyalanamaz.
+        Kesin ölçü, malzeme ve teslim süresi sipariş onayıyla belirlenir. Site içeriği
+        KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. (MCF Etiket)&apos;e aittir; izinsiz kopyalanamaz.
       </p>
     </main>
   );

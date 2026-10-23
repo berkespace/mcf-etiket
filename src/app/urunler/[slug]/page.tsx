@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { PageBanner } from "@/components/page-banner";
 import { SidebarMenu } from "@/components/sidebar-menu";
-import { QuoteForm } from "@/components/quote-form";
 import { products } from "@/lib/products";
 import { site } from "@/lib/site";
 
@@ -75,10 +74,12 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   </p>
                   <div className="pt-3 flex flex-wrap gap-2">
                     <a
-                      href="#teklif-al"
-                      className="inline-block bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
+                      href={site.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
                     >
-                      Fiyat Teklifi Al
+                      💬 WhatsApp ile Sipariş Ver
                     </a>
                     <a
                       href={`tel:${site.phoneRaw}`}
@@ -129,8 +130,31 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </ul>
             </div>
 
-            {/* Hızlı Teklif Formu */}
-            <QuoteForm />
+            {/* Doğrudan Sipariş ve Danışmanlık */}
+            <div className="border border-gray-200 bg-gray-50/70 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div>
+                <h3 className="font-bold text-gray-900 text-sm">{product.title} Siparişi ve Bilgi</h3>
+                <p className="mt-1 text-xs text-gray-600">
+                  İstediğiniz ölçü, kuka çapı ve adet için doğrudan yetkilimiz {site.contactPerson} ile görüşebilirsiniz.
+                </p>
+              </div>
+              <div className="flex gap-2 shrink-0">
+                <a
+                  href={`tel:${site.phoneRaw}`}
+                  className="bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-4 py-2 rounded-sm transition-colors"
+                >
+                  📞 {site.phone}
+                </a>
+                <a
+                  href={site.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-semibold px-4 py-2 rounded-sm transition-colors"
+                >
+                  💬 WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Sağ Kolon */}

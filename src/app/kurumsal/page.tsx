@@ -28,10 +28,10 @@ export default function KurumsalPage() {
               </h2>
               <div className="mt-4 space-y-4 text-sm leading-relaxed">
                 <p>
-                  <strong>MCF Etiket</strong>, barkod etiketleri, baskılı ve baskısız rulo etiketler ile termal transfer ribon alanında endüstriyel üretim yapan öncü bir ambalaj ve etiketleme kuruluşudur.
+                  <strong>KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ.</strong> bünyesinde faaliyet gösteren <strong>MCF Etiket</strong>, barkod etiketleri, baskılı ve baskısız rulo etiketler ile termal transfer ribon alanında endüstriyel üretim yapan öncü bir ambalaj ve etiketleme kuruluşudur.
                 </p>
                 <p>
-                  İstanbul İkitelli Organize Sanayi Bölgesi’ndeki modern tesisimizde; gıda, lojistik, kimya, tekstil, sağlık ve perakende sektörleri başta olmak üzere Türkiye genelinde yüzlerce kurumsal firmaya çözüm ortaklığı sunuyoruz.
+                  Antalya Kepez’deki modern tesisimizde; gıda, lojistik, kimya, tekstil, sağlık ve perakende sektörleri başta olmak üzere Türkiye genelinde yüzlerce kurumsal firmaya çözüm ortaklığı sunuyoruz.
                 </p>
               </div>
 
@@ -98,7 +98,7 @@ export default function KurumsalPage() {
                   href="/iletisim"
                   className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors"
                 >
-                  Teklif ve Numune İste
+                  İletişime Geçin
                 </Link>
               </div>
             </section>

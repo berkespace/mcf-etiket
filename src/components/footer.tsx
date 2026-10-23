@@ -16,11 +16,14 @@ export function Footer() {
           {/* Logo & Şirket Bilgisi */}
           <div>
             <Logo className="h-10 w-auto" />
-            <p className="mt-3 text-xs text-gray-400 leading-relaxed max-w-sm">
+            <p className="mt-2.5 text-xs font-bold text-gray-200">
+              {site.companyTitle}
+            </p>
+            <p className="mt-2 text-xs text-gray-400 leading-relaxed max-w-sm">
               {t("footerDesc")}
             </p>
-            <p className="mt-3 text-xs text-gray-400">
-              {t("footerAddress")}
+            <p className="mt-2.5 text-xs text-gray-300 leading-relaxed">
+              📍 {t("footerAddress")}
             </p>
           </div>
 
@@ -75,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-gray-700/60 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-3">
-          <p>© 2026 {site.name}. {t("footerAllRights")}</p>
+          <p>© 2026 {site.companyTitle}. {t("footerAllRights")}</p>
           <div className="flex gap-4">
             <Link href="/kvkk" className="hover:text-gray-200">
               {t("footerKvkk")}

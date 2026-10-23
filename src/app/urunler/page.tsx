@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { PageBanner } from "@/components/page-banner";
 import { SidebarMenu } from "@/components/sidebar-menu";
 import { ProductCatalog } from "@/components/product-catalog";
-import { QuoteForm } from "@/components/quote-form";
 
 export const metadata: Metadata = {
   title: "Ürünlerimiz",
@@ -26,12 +25,11 @@ export default function UrunlerPage() {
                 Endüstriyel Rulo ve Barkod Etiket Grupları
               </h2>
               <p className="mt-1 text-xs text-gray-500">
-                Aşağıdaki ürünlerden ihtiyacınız olan grubu seçerek detaylı teknik özellikleri inceleyebilir ve doğrudan teklif alabilirsiniz.
+                Aşağıdaki ürünlerden ihtiyacınız olan grubu seçerek detaylı teknik özellikleri inceleyebilir ve sipariş için doğrudan iletişime geçebilirsiniz.
               </p>
             </div>
 
             <ProductCatalog />
-            <QuoteForm />
           </div>
 
           {/* Sağ Kolon */}

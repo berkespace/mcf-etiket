@@ -14,8 +14,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MCF Etiket - Rulo ve Barkod Etiket Çözümleri",
-  description: "Baskılı ve baskısız rulo etiketlerde hassas üretim. Eco termal, lamine termal, kuşe ve barkod ribonları.",
+  title: "MCF Etiket - KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ.",
+  description: "KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. - Baskılı ve baskısız rulo etiketlerde hassas üretim. Kepez / Antalya.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
