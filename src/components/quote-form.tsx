@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
+import { site } from "@/lib/site";
 
 const productOptionsTr = [
   "Eco Termal Etiket",
@@ -40,6 +41,13 @@ export function QuoteForm() {
         <h3 className="font-bold text-green-900 text-base">{t("quoteSuccessTitle")}</h3>
         <p className="mt-1 text-green-800">
           {t("quoteSuccessDesc")}
+        </p>
+        <p className="mt-2 text-xs text-green-700">
+          Acil durumlarda doğrudan yetkilimiz <strong>{site.contactPerson}</strong> ile{" "}
+          <a href={`tel:${site.phoneRaw}`} className="underline font-bold">
+            {site.phone}
+          </a>{" "}
+          numarasından iletişime geçebilirsiniz.
         </p>
         <button
           type="button"
@@ -154,10 +162,16 @@ export function QuoteForm() {
         </div>
       </div>
 
-      <div className="mt-5 pt-4 border-t border-gray-100 flex justify-end">
+      <div className="mt-5 pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p className="text-xs text-gray-500">
+          Hızlı sipariş & bilgi:{" "}
+          <a href={`tel:${site.phoneRaw}`} className="font-bold text-gray-900 hover:text-[#c61d23]">
+            {site.contactPerson} ({site.phone})
+          </a>
+        </p>
         <button
           type="submit"
-          className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors cursor-pointer"
+          className="bg-[#c61d23] hover:bg-[#b0141a] text-white text-sm font-semibold px-6 py-2.5 rounded-sm transition-colors cursor-pointer w-full sm:w-auto text-center"
         >
           {t("submitQuoteBtn")}
         </button>

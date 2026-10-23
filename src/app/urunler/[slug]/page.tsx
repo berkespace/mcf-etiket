@@ -5,6 +5,7 @@ import { PageBanner } from "@/components/page-banner";
 import { SidebarMenu } from "@/components/sidebar-menu";
 import { QuoteForm } from "@/components/quote-form";
 import { products } from "@/lib/products";
+import { site } from "@/lib/site";
 
 interface ProductPageProps {
   params: Promise<{
@@ -72,12 +73,18 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   <p className="text-sm text-gray-600 leading-relaxed">
                     {product.description}
                   </p>
-                  <div className="pt-3">
+                  <div className="pt-3 flex flex-wrap gap-2">
                     <a
                       href="#teklif-al"
-                      className="inline-block bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-5 py-2.5 rounded-sm transition-colors"
+                      className="inline-block bg-[#c61d23] hover:bg-[#b0141a] text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
                     >
-                      Bu Ürün İçin Fiyat İste
+                      Fiyat Teklifi Al
+                    </a>
+                    <a
+                      href={`tel:${site.phoneRaw}`}
+                      className="inline-flex items-center gap-1.5 bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
+                    >
+                      <span>📞 {site.contactPerson}: {site.phone}</span>
                     </a>
                   </div>
                 </div>

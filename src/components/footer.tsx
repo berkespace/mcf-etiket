@@ -47,9 +47,19 @@ export function Footer() {
             </h4>
             <div className="space-y-1.5 text-xs text-gray-400">
               <p>
+                {locale === "en" ? "Contact Person: " : "İletişim / Yetkili: "}
+                <span className="text-white font-medium">{site.contactPerson}</span>
+              </p>
+              <p>
                 {locale === "en" ? "Phone: " : "Telefon: "}
-                <a href={`tel:${site.phoneRaw}`} className="text-white hover:underline">
+                <a href={`tel:${site.phoneRaw}`} className="text-white hover:underline font-medium">
                   {t("phone")}
+                </a>
+              </p>
+              <p>
+                {locale === "en" ? "WhatsApp: " : "WhatsApp: "}
+                <a href={site.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:underline font-medium">
+                  {site.phone}
                 </a>
               </p>
               <p>

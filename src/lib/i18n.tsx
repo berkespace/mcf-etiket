@@ -7,7 +7,8 @@ export type Locale = "tr" | "en";
 export const translations = {
   tr: {
     // Top bar
-    phone: "0 (212) 674 88 90",
+    contactPerson: "Mustafa Güçlü",
+    phone: "+90 534 209 88 01",
     email: "info@mcfetiket.com",
     trLabel: "Türkçe",
     enLabel: "English",
@@ -79,7 +80,8 @@ export const translations = {
   },
   en: {
     // Top bar
-    phone: "+90 (212) 674 88 90",
+    contactPerson: "Mustafa Güçlü",
+    phone: "+90 534 209 88 01",
     email: "info@mcfetiket.com",
     trLabel: "Türkçe",
     enLabel: "English",

@@ -30,6 +30,28 @@ export default function IletisimPage() {
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
                 <div>
                   <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                    İletişim & Satış Yetkilisi
+                  </h3>
+                  <p className="mt-1 text-base font-bold text-gray-900">
+                    {site.contactPerson}
+                  </p>
+                  <p className="text-xs text-gray-500">Müşteri Temsilcisi & Satış Sorumlusu</p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
+                    Telefon & WhatsApp Hattı
+                  </h3>
+                  <p className="mt-1">
+                    <a href={`tel:${site.phoneRaw}`} className="text-base font-bold text-gray-900 hover:text-[#c61d23]">
+                      {site.phone}
+                    </a>
+                  </p>
+                  <p className="text-xs text-gray-500">Hızlı arama & WhatsApp mesajı için aktif</p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
                     Fabrika Adresi
                   </h3>
                   <p className="mt-1 text-gray-700 leading-relaxed">
@@ -48,18 +70,7 @@ export default function IletisimPage() {
 
                 <div>
                   <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
-                    Telefon & Müşteri Hattı
-                  </h3>
-                  <p className="mt-1">
-                    <a href={`tel:${site.phoneRaw}`} className="text-base font-bold text-gray-900 hover:text-[#c61d23]">
-                      {site.phone}
-                    </a>
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-gray-900 text-xs uppercase tracking-wide text-[#c61d23]">
-                    E-Posta & Teklif
+                    E-Posta & Kurumsal Teklif
                   </h3>
                   <p className="mt-1">
                     <a href={`mailto:${site.email}`} className="font-semibold text-gray-900 hover:text-[#c61d23]">
@@ -74,7 +85,7 @@ export default function IletisimPage() {
                   href={`tel:${site.phoneRaw}`}
                   className="bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
                 >
-                  📞 Hemen Telefonla Arayın
+                  📞 Mustafa Güçlü: {site.phone}
                 </a>
                 <a
                   href={site.whatsappUrl}
@@ -82,7 +93,7 @@ export default function IletisimPage() {
                   rel="noopener noreferrer"
                   className="bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-semibold px-4 py-2.5 rounded-sm transition-colors"
                 >
-                  💬 WhatsApp ile Yazın
+                  💬 WhatsApp ile Yazın ({site.phone})
                 </a>
               </div>
             </div>

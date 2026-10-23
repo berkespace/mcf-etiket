@@ -116,9 +116,9 @@ export default function TeknikDestekPage() {
               <div className="flex gap-2 shrink-0">
                 <a
                   href={`tel:${site.phoneRaw}`}
-                  className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-sm"
+                  className="bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-4 py-2 rounded-sm transition-colors"
                 >
-                  Ara: {site.phone}
+                  Ara: {site.contactPerson} ({site.phone})
                 </a>
                 <Link
                   href="/iletisim"

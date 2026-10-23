@@ -27,7 +27,7 @@ export function Header() {
               <svg className="h-3.5 w-3.5 text-[#c61d23]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z" />
               </svg>
-              <span>{t("phone")}</span>
+              <span>{t("contactPerson")}: {t("phone")}</span>
             </a>
 
             <a
@@ -196,6 +196,12 @@ export function Header() {
               >
                 {t("navContact")}
               </Link>
+              <a
+                href={`tel:${site.phoneRaw}`}
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-900 py-2 text-white font-semibold text-xs"
+              >
+                <span>📞 {site.contactPerson}: {site.phone}</span>
+              </a>
             </div>
           </div>
         )}

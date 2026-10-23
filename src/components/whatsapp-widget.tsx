@@ -21,6 +21,10 @@ export function WhatsAppWidget() {
           >
             ✕
           </button>
+          <div className="flex items-center gap-1.5 mb-1 border-b border-gray-100 pb-1">
+            <span className="inline-block h-2 w-2 rounded-full bg-[#25D366]"></span>
+            <span className="font-bold text-[11px] text-gray-900">{site.contactPerson}</span>
+          </div>
           <p className="font-semibold text-gray-800 pr-3">
             {t("waTooltipTitle")}
           </p>
@@ -28,9 +32,9 @@ export function WhatsAppWidget() {
             href={site.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-0.5 block font-bold text-gray-700 hover:text-[#25D366]"
+            className="mt-1 block font-bold text-[#25D366] hover:underline"
           >
-            {t("waTooltipLink")}
+            {site.phone} ({t("waTooltipLink")})
           </a>
         </div>
       )}

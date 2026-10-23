@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { products } from "@/lib/products";
 import { useLanguage } from "@/lib/i18n";
+import { site } from "@/lib/site";
 
 interface SidebarMenuProps {
   active?: "hakkimizda" | "urunler" | "teknik-destek" | "blog" | "iletisim";
@@ -160,6 +161,33 @@ export function SidebarMenu({ active = "urunler" }: SidebarMenuProps) {
               {t("rawMaterialDesc")}
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* 3. DİREKT İLETİŞİM & SİPARİŞ HATTI */}
+      <div className="border border-gray-200 bg-white p-4">
+        <span className="text-[11px] font-bold uppercase tracking-wider text-[#c61d23]">
+          {locale === "en" ? "Direct Contact & Orders" : "Direkt İletişim & Sipariş"}
+        </span>
+        <h4 className="mt-1 text-sm font-bold text-gray-900">{site.contactPerson}</h4>
+        <p className="mt-0.5 text-xs text-gray-500">
+          {locale === "en" ? "Sales & Customer Support" : "Satış & Müşteri Temsilcisi"}
+        </p>
+        <div className="mt-3 space-y-2">
+          <a
+            href={`tel:${site.phoneRaw}`}
+            className="flex items-center justify-center gap-1.5 w-full bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold py-2 px-3 rounded-sm transition-colors"
+          >
+            <span>📞 {site.phone}</span>
+          </a>
+          <a
+            href={site.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-semibold py-2 px-3 rounded-sm transition-colors"
+          >
+            <span>💬 WhatsApp ile Yazın</span>
+          </a>
         </div>
       </div>
     </aside>
