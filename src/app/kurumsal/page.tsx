@@ -5,8 +5,23 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kurumsal",
-  description: "MCF Etiket kurumsal profili, üretim parkuru ve hammadde standartları.",
+  title: "Kurumsal & Üretim Parkuru - KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ.",
+  description:
+    "KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. ve MCF Etiket kurumsal profili, flekso baskı hatları, Antalya Kepez üretim tesisi ve Avrupa menşeli A kalite hammadde standartları.",
+  keywords: [
+    "kurumsal etiket üreticisi",
+    "mcf etiket hakkında",
+    "kardeşler kağıt antalya",
+    "flekso baskı etiket",
+    "ambalaj sanayi antalya",
+    "etiket üretim parkuru",
+    "etiket fabrikası kepez",
+  ],
+  openGraph: {
+    title: "Kurumsal Profil | MCF Etiket - KARDEŞLER KAĞIT",
+    description: "Antalya Kepez tesislerimizde flekso baskı ve rulo etiket üretim standartlarımız.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function KurumsalPage() {

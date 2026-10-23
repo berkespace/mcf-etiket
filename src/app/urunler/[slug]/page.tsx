@@ -24,8 +24,35 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   if (!product) return {};
 
   return {
-    title: product.title,
-    description: product.shortDesc,
+    title: `${product.title} - Rulo Etiket Çözümleri`,
+    description: `${product.description} İstenen ölçü, kuka çapı ve adette hızlı üretim. KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. - Kepez / Antalya.`,
+    keywords: [
+      product.title,
+      product.categoryLabel,
+      "rulo etiket",
+      "barkod etiketi",
+      "etiket üretimi antalya",
+      "mcf etiket",
+      "kardeşler kağıt",
+    ],
+    openGraph: {
+      title: `${product.title} | MCF Etiket - KARDEŞLER KAĞIT`,
+      description: `${product.description} İstenen ölçü ve adette üretim.`,
+      images: [
+        {
+          url: product.image,
+          width: 800,
+          height: 600,
+          alt: product.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.title} | MCF Etiket`,
+      description: product.description,
+      images: [product.image],
+    },
   };
 }
 

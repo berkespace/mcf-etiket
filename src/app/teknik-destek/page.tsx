@@ -5,8 +5,22 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Teknik Destek",
-  description: "Barkod yazıcı termal kafa bakımı, kuka çapları ve ribon uyumluluk kılavuzları.",
+  title: "Teknik Destek & Ribon - Etiket Uyumluluk Kılavuzu",
+  description:
+    "Barkod yazıcı termal kafa bakımı, 40mm ve 76mm kuka çapları, wax, resin, wax-resin ribon seçim rehberi. MCF Etiket uzman teknik destek hattı.",
+  keywords: [
+    "termal kafa bakımı",
+    "kuka çapı 40mm 76mm",
+    "ribon etiket uyumu",
+    "wax ribon nerede kullanılır",
+    "resin ribon özellikleri",
+    "barkod yazıcı temizliği",
+  ],
+  openGraph: {
+    title: "Teknik Destek ve Ribon Uyumu | MCF Etiket",
+    description: "Yazıcınıza en uygun etiket ve ribon seçimi için teknik rehber.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function TeknikDestekPage() {

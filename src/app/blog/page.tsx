@@ -4,8 +4,21 @@ import { SidebarMenu } from "@/components/sidebar-menu";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Etiket türleri, barkod yazıcı bakımı ve ambalaj sektörü teknik makaleleri.",
+  title: "Blog & Sektörel Etiket Rehberleri",
+  description:
+    "Eco termal ile lamine termal farkları, doğru ribon seçimi, lojistikte barkod etiketleme standartları ve sektörel teknik rehberler.",
+  keywords: [
+    "etiket blog",
+    "eco termal farkı",
+    "ribon seçimi rehberi",
+    "barkod etiketleme standartları",
+    "mcf etiket makaleler",
+  ],
+  openGraph: {
+    title: "Blog & Etiket Rehberleri | MCF Etiket",
+    description: "Endüstriyel etiketleme ve barkod sistemleri teknik makaleleri.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 const articles = [

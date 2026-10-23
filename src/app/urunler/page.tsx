@@ -4,8 +4,20 @@ import { SidebarMenu } from "@/components/sidebar-menu";
 import { ProductCatalog } from "@/components/product-catalog";
 
 export const metadata: Metadata = {
-  title: "Ürünlerimiz",
-  description: "Termal etiketler, kuşe etiketler, plastik bazlı etiketler ve barkod ribonları.",
+  title: "Ürünlerimiz - Rulo ve Barkod Etiket Çeşitleri",
+  description:
+    "Eco termal, lamine termal, kuşe etiket, termal sandviç, PP opak ve barkod ribon çeşitleri. Avrupa standartlarında hammadde ile istenen ölçü ve adette rulo etiket üretimi. KARDEŞLER KAĞIT - Kepez / Antalya.",
+  keywords: [
+    "rulo etiket ürünleri",
+    "eco termal rulo",
+    "lamine termal",
+    "kuşe etiket üretimi",
+    "pp opak sentetik",
+    "barkod ribon çeşitleri",
+    "wax ribon",
+    "resin ribon",
+    "antalya etiket",
+  ],
 };
 
 export default function UrunlerPage() {

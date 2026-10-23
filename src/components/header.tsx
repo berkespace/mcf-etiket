@@ -11,6 +11,7 @@ import { useLanguage } from "@/lib/i18n";
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const { locale, setLocale, t } = useLanguage();
 
@@ -41,35 +42,58 @@ export function Header() {
             </a>
           </div>
 
-          {/* DİL SEÇİMİ (Language Switcher - Functional) */}
-          <div className="flex items-center gap-2 text-xs">
+          {/* DİL SEÇİMİ (Bayrak Dropdown - Sadece Ülke Bayrağı) */}
+          <div className="relative">
             <button
               type="button"
-              onClick={() => setLocale("tr")}
-              className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded cursor-pointer transition ${
-                locale === "tr"
-                  ? "font-bold text-gray-900 bg-gray-100"
-                  : "text-gray-500 hover:text-gray-800"
-              }`}
-              title="Türkçe"
+              onClick={() => setLangOpen((v) => !v)}
+              aria-label="Dil Seçimi / Select Language"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-gray-200 hover:border-gray-300 bg-white hover:bg-gray-50 cursor-pointer transition shadow-xs text-sm"
             >
-              <span>🇹🇷</span>
-              <span>{t("trLabel")}</span>
+              <span className="text-base leading-none">
+                {locale === "tr" ? "🇹🇷" : "🇬🇧"}
+              </span>
+              <svg className={`h-3 w-3 text-gray-500 transition-transform ${langOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
-            <span className="text-gray-300">|</span>
-            <button
-              type="button"
-              onClick={() => setLocale("en")}
-              className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded cursor-pointer transition ${
-                locale === "en"
-                  ? "font-bold text-gray-900 bg-gray-100"
-                  : "text-gray-500 hover:text-gray-800"
-              }`}
-              title="English"
-            >
-              <span>🇬🇧</span>
-              <span>{t("enLabel")}</span>
-            </button>
+
+            {langOpen && (
+              <div
+                className="absolute right-0 top-full mt-1.5 z-50 flex flex-col bg-white border border-gray-200 rounded shadow-lg py-1 min-w-[56px] items-center"
+                onMouseLeave={() => setLangOpen(false)}
+              >
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLocale("tr");
+                    setLangOpen(false);
+                  }}
+                  className={`w-full py-1.5 px-3 flex items-center justify-center text-xl hover:bg-[#fef7ed] transition cursor-pointer ${
+                    locale === "tr" ? "bg-[#fef7ed]/80" : ""
+                  }`}
+                  title="Türkçe"
+                  aria-label="Türkçe"
+                >
+                  <span>🇹🇷</span>
+                </button>
+                <div className="w-full border-t border-gray-100 my-0.5"></div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLocale("en");
+                    setLangOpen(false);
+                  }}
+                  className={`w-full py-1.5 px-3 flex items-center justify-center text-xl hover:bg-[#fef7ed] transition cursor-pointer ${
+                    locale === "en" ? "bg-[#fef7ed]/80" : ""
+                  }`}
+                  title="English"
+                  aria-label="English"
+                >
+                  <span>🇬🇧</span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -210,6 +234,30 @@ export function Header() {
               >
                 <span>📞 {site.contactPerson}: {site.phone}</span>
               </a>
+
+              {/* Mobil Bayrak Seçici */}
+              <div className="pt-2 border-t border-gray-100 flex items-center justify-center gap-4">
+                <button
+                  type="button"
+                  onClick={() => setLocale("tr")}
+                  className={`p-2 rounded border text-2xl transition ${
+                    locale === "tr" ? "border-[#e69222] bg-[#fef7ed]" : "border-gray-200"
+                  }`}
+                  title="Türkçe"
+                >
+                  🇹🇷
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLocale("en")}
+                  className={`p-2 rounded border text-2xl transition ${
+                    locale === "en" ? "border-[#e69222] bg-[#fef7ed]" : "border-gray-200"
+                  }`}
+                  title="English"
+                >
+                  🇬🇧
+                </button>
+              </div>
             </div>
           </div>
         )}

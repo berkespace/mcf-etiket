@@ -4,8 +4,22 @@ import { SidebarMenu } from "@/components/sidebar-menu";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "İletişim - KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ.",
-  description: "KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. - MCF Etiket fabrika iletişim bilgileri, Kepez Antalya adres ve telefon.",
+  title: "İletişim & Fabrika Adresi - KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ.",
+  description:
+    "KARDEŞLER KAĞIT AMB. SAN. TİC. LTD. ŞTİ. - MCF Etiket fabrika iletişim bilgileri, Altayak Mahallesi Kepez / Antalya adresimiz, doğrudan telefon +90 534 209 88 01 ve WhatsApp hattı.",
+  keywords: [
+    "mcf etiket iletişim",
+    "kardeşler kağıt telefon",
+    "antalya etiket fabrikası adres",
+    "mustafa güçlü iletişim",
+    "kepez etiket sipariş",
+    "etiket fiyat bilgisi",
+  ],
+  openGraph: {
+    title: "İletişim | MCF Etiket - KARDEŞLER KAĞIT",
+    description: "Kepez Antalya fabrika adresi ve doğrudan iletişim hattı: +90 534 209 88 01.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export default function IletisimPage() {
